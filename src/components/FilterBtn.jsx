@@ -29,7 +29,7 @@ function FilterBtn({ countryName, genderName, handleFilterBtn, filterBtn }) {
           key={idx}
           variant="contained"
           className={
-            "!bg-gray-400 !text-black !capitalize " +
+            " !bg-gray-400 !text-black !capitalize " +
             `${item === filterBtn?.gender ? "!bg-gray-900 !text-white" : ""}`
           }
           name="gender"
@@ -45,11 +45,13 @@ function FilterBtn({ countryName, genderName, handleFilterBtn, filterBtn }) {
   return (
     <div className="flex flex-col flex-wrap gap-y-4 sm:items-center w-full">
       {/* gender box */}
-      <div className="flex flex-row px-4 sm:px-0 flex-wrap gap-3">
+      <div className="w-full flex flex-row px-4  flex-wrap gap-3  lg:justify-center">
         {genderButtons()}
       </div>
+      {/* divided */}
+      <div className="w-[90%] h-[1px] bg-gray-300"></div>
       {/* country box */}
-      <div className="flex flex-row  px-4 sm:px-0 flex-wrap gap-3">
+      <div className="w-full flex flex-row  px-4  flex-wrap gap-3 lg:justify-center">
         {countryButtons()}
       </div>
     </div>

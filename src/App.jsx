@@ -164,8 +164,8 @@ function App() {
   };
 
   return (
-    <div className="container mx-auto px-2">
-      <header className="text-center py-4">
+    <div className="container mx-auto px-2 pb-16">
+      <header className="text-center py-10">
         <h1 className="text-4xl font-bold">MLB Test</h1>
       </header>
       <section className="flex flex-col gap-y-8">
